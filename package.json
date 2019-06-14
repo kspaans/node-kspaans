@@ -1,0 +1,35 @@
+{
+  "private": false,
+  "version": "0.2.0",
+  "name": "kyle",
+  "description": "NPM package with metadata about me!",
+  "author": "Kyle Spaans <kyle@spaans.com> (https://spaans.ca)",
+  "homepage": "https://spaans.ca",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kspaans/node-kspaans.git"
+  },
+  "license": "ISC",
+  "main": "index.js",
+  "keywords": [
+    "metadata",
+    "kyle",
+    "spaans",
+    "kspaans"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
+  "files": [
+    "index.js"
+  ],
+  "bugs": {
+    "url": "https://github.com/kspaans/node-kspaans/issues"
+  },
+  "scripts": {
+    "lint:ec": "npx editorconfig-checker .",
+    "lint:js": "npx eslint .",
+    "lint:md": "npx remark --quiet --frail .",
+    "lint": "npx run-p lint:*"
+  }
+}
